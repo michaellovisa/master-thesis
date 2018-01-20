@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Gentallela Alela! | </title>
+
+  <!-- Bootstrap -->
+  <link href="src/view/gentelella/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="src/view/gentelella/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Ion.RangeSlider -->
+  <link href="src/view/gentelella/vendors/normalize-css/normalize.css" rel="stylesheet">
+  <link href="src/view/gentelella/vendors/ion.rangeSlider/css/ion.rangeSlider.css" rel="stylesheet">
+  <link href="src/view/gentelella/vendors/ion.rangeSlider/css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+  <!-- Switchery -->
+  <link href="src/view/gentelella/vendors/switchery/dist/switchery.min.css" rel="stylesheet">
+
+  <!-- Custom Theme Style -->
+  <link href="src/view/gentelella/build/css/custom.css" rel="stylesheet">
+</head>
+
+<body class="nav-md" style="overflow-y: scroll;height:1080px;"> <!-- SET MONITOR HEIGHT HERE -->
+  <div class="container body">
+
+    <!-- top navigation -->
+    <div class="top_nav">
+      <div class="nav_menu">
+        <nav class="" role="navigation">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="">
+              <a class="user-profile dropdown-toggle" >
+                <img src="images/profile_pic.png" alt="">Composer 
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- /top navigation -->
+
+    <!-- page content -->
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 only_col" role="main">
+      <div class="" id="main-div">
+        <div class="page-title">
+          <div class="title_left">
+            <h3>Composer panel</h3>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+
+
+        <div class="row" id="musicmakerpanel">
+          <div class="x_panel">
+            <div class="x_title">
+              <h2>Music maker </h2>
+              <ul class="nav navbar-right panel_toolbox">
+                <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                </li>
+              </ul>
+              <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+              <div class="row"> 
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> 
+                </div> 
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <label for="scriptName" class="col-sm-3 control-label">Script name</label>
+                      <div class="col-sm-6">
+                        <input class="form-control" id="scriptName" placeholder="Insert new name">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="bpm" class="col-sm-3 control-label">Bpm</label>
+                      <div class="col-sm-6">
+                        <input class="form-control" id="bpm" placeholder="Insert bpm (> 1)">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="dropdown">
+                        <label for="select-scale" class="col-sm-3 control-label"> Scale/Key </label>
+                        <div class="col-sm-6">
+                          <button id="select-scale" data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button" aria-expanded="false"> Select scale <span class="caret"></span>
+                          </button>
+                          <ul role="menu" class="dropdown-menu" id="scale-dropdown">
+                            <li><a role="button" data-value="random">random</a>
+                            </li>
+                            <li><a role="button" data-value="C">C</a>
+                            </li>
+                            <li><a role="button" data-value="C#">C#/Db</a>
+                            </li>
+                            <li><a role="button" data-value="D">D</a>
+                            </li>
+                            <li><a role="button" data-value="D#">D#/Eb</a>
+                            </li>
+                            <li><a role="button" data-value="E">E</a>
+                            </li>
+                            <li><a role="button" data-value="F">F</a>
+                            </li>
+                            <li><a role="button" data-value="F#">F#/Gb</a>
+                            </li>
+                            <li><a role="button" data-value="G">G</a>
+                            </li>
+                            <li><a role="button" data-value="G#">G#/Ab</a>
+                            </li>
+                            <li><a role="button" data-value="A">A</a>
+                            </li>
+                            <li><a role="button" data-value="A#">A#/Bb</a>
+                            </li>
+                            <li><a role="button" data-value="B">B</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="dropdown">
+                        <label for="select-majmin" class="col-sm-3 control-label"> Major/Minor </label>
+                        <div class="col-sm-6">
+                          <button id="select-majmin" data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button" aria-expanded="false"> Select classification <span class="caret"></span>
+                          </button>
+                          <ul role="menu" class="dropdown-menu" id="majmin-dropdown">
+                            <li><a role="button" data-value="major">major</a>
+                            </li>
+                            <li><a role="button" data-value="minor">minor</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div> 
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">    
+                </div> 
+              </div> 
+              <div class="row"> 
+                <div class="col-lg-5"> 
+                </div>
+                <div class="col-lg-1"> 
+                  <a id="add-synth" class="btn btn-app" data-value="1">
+                    <i class="fa fa-plus"></i> Add synthesizer
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-5"> 
+              </div>
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+
+    <div class="row" id="generalbuttons">
+      <div class="x_panel">
+        <div class="x_content">
+          <div class="row"> 
+            <div class="col-lg-4">
+            </div>
+            <div class="col-lg-4"> 
+              <a id="playeverything" class="btn btn-app-small" data-value="1">
+                <i class="fa fa-play"></i>
+                Play everything
+              </a>
+              <a id="stopeverything" class="btn btn-app-small" data-value="1">
+                <i class="fa fa-stop"></i>
+                Stop everything
+              </a>
+            </div>
+            <div class="col-lg-4"> 
+            </div>
+          </div> 
+          <div class="row"> 
+            <div class="col-lg-4"> 
+            </div>
+            <div class="col-lg-4"> 
+              <a id="export" class="btn btn-app-big" data-value="1">
+               EXPORT SETTINGS
+             </a>
+           </div>
+           <div class="col-lg-4"> 
+           </div>
+         </div> 
+       </div> 
+     </div> 
+   </div> 
+ </div> <!-- /main column -->
+</div>  <!-- /page content -->
+
+<!-- jQuery -->
+<script src="src/view/gentelella/vendors/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="src/view/gentelella/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="src/view/gentelella/vendors/fastclick/lib/fastclick.js"></script>
+<!-- Ion.RangeSlider -->
+<script src="src/view/gentelella/vendors/ion.rangeSlider/js/ion.rangeSlider.min.js"></script>
+<!-- Switchery -->
+<script src="src/view/gentelella/vendors/switchery/dist/switchery.min.js"></script>
+
+<!-- Custom Theme Scripts -->
+<script src="src/view/gentelella/build/js/custom.min.js"></script>
+
+
+<script language="javascript" src="composer-panel.js"></script>
+<script language="javascript" src="view.js"></script>
+<script language="javascript" src="music-scale.js"></script>
+
+
+</body>
+</html>

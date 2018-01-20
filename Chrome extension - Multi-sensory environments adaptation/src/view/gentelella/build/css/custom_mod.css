@@ -1,0 +1,16 @@
+.panel_toolbox_mod {
+  float: right;
+  min-width: 70px; }
+
+.panel_toolbox_mod > li {
+  float: left;
+  cursor: pointer; }
+
+.panel_toolbox_mod > li > a {
+  padding: 5px;
+  color: #C5C7CB;
+  font-size: 14px; }
+
+.panel_toolbox_mod > li > a:hover {
+  background: #F5F7FA; }
+
